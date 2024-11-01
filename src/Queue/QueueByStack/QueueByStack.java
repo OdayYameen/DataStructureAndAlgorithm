@@ -45,4 +45,18 @@ public class QueueByStack {
         }
         System.out.println();
     }
+
+    public static void main(String[] args) {
+
+        QueueByStack queueByStack = new QueueByStack();
+        queueByStack.enqueue(5);
+        queueByStack.enqueue(4);
+        queueByStack.enqueue(3);
+        queueByStack.display();
+        System.out.println(queueByStack.dequeue());
+        System.out.println(queueByStack.dequeue());
+        System.out.println(queueByStack.dequeue());
+        queueByStack.display();
+        System.out.println(queueByStack.dequeue());
+    }
 }

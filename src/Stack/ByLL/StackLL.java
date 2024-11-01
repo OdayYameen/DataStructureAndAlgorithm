@@ -62,4 +62,24 @@ public class StackLL {
   public NodeSLL getTop() {
     return top;
   }
+
+  public static void main(String[] args) {
+
+    StackLL stackLL = new StackLL();
+    stackLL.push(2);
+    stackLL.push(3);
+    stackLL.push(4);
+    stackLL.push(5);
+    stackLL.display();
+    System.out.println(stackLL.pop());
+    System.out.println(stackLL.pop());
+    System.out.println(stackLL.pop());
+    stackLL.display();
+    System.out.println(stackLL.pop());
+    System.out.println(stackLL.pop());
+    System.out.println(stackLL.pop());
+    System.out.println(stackLL.peek());
+    System.out.println(stackLL.peek());
+    System.out.println(stackLL.peek());
+  }
 }

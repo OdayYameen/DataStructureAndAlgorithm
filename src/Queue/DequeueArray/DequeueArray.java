@@ -120,4 +120,21 @@ public class DequeueArray {
             return p;
 
     }
+
+    public static void main(String[] args) {
+
+        DequeueArray dequeueArray = new DequeueArray();
+        dequeueArray.enqueueFront(5);
+        dequeueArray.enqueueRear(6);
+        dequeueArray.enqueueRear(7);
+        dequeueArray.enqueueFront(4);
+        dequeueArray.enqueueFront(3);
+        dequeueArray.displayDequeue();
+        dequeueArray.dequeueFront();
+        dequeueArray.dequeueRear();
+        dequeueArray.dequeueRear();
+        dequeueArray.dequeueFront();
+        dequeueArray.dequeueFront();
+        dequeueArray.displayDequeue();
+    }
 }

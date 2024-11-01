@@ -214,6 +214,7 @@ public class BSTOp {
     }
 
     public static void main(String[] args) {
+
         BSTOp bstOp = new BSTOp();
         BTNode root = null;
         root = bstOp.insert(root ,5);
@@ -230,7 +231,6 @@ public class BSTOp {
         System.out.println();
         System.out.println("is Exist");
         System.out.println(bstOp.isExist(root,7));
-        //root = bstOp.deleteNode(root,2);
         root = bstOp.deleteNodeBetterPerformance(root, 2);
         System.out.println();
         System.out.println("delete 2");

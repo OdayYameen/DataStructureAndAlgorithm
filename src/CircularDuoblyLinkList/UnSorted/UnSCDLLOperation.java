@@ -240,4 +240,39 @@ public class UnSCDLLOperation {
         head = tail;
         tail = current;
     }
+
+    public static void main(String[] args) {
+        UnSCDLLOperation unSCDLLOperation = new UnSCDLLOperation();
+        unSCDLLOperation.insertAtBeg(3);
+        unSCDLLOperation.insertAtBeg(2);
+        unSCDLLOperation.insertAtBeg(1);
+        unSCDLLOperation.insertAtEnd(4);
+        unSCDLLOperation.insertAtEnd(5);
+        unSCDLLOperation.insertAtEnd(6);
+        unSCDLLOperation.insertAtPos(2,1);
+        unSCDLLOperation.insertAtPos(1,1);
+        unSCDLLOperation.insertAtPos(4,3);
+        unSCDLLOperation.insertAtPos(5,2);
+        unSCDLLOperation.printCDLL();
+        unSCDLLOperation.deleteFromEnd();
+        unSCDLLOperation.deleteFromEnd();
+        unSCDLLOperation.deleteFromEnd();
+        unSCDLLOperation.deleteFromEnd();
+        unSCDLLOperation.deleteFromEnd();
+        unSCDLLOperation.deleteFromEnd();
+        unSCDLLOperation.insertAtEnd(7);
+        unSCDLLOperation.insertAtEnd(6);
+        unSCDLLOperation.deleteAtPos(2);
+        unSCDLLOperation.deleteAtPos(3);
+        unSCDLLOperation.deleteAtPos(1);
+        unSCDLLOperation.deleteAtPos(2);
+        unSCDLLOperation.deleteAtPos(1);
+        unSCDLLOperation.printCDLL();
+        unSCDLLOperation.insertAtEnd(7);
+        unSCDLLOperation.insertAtEnd(6);
+        unSCDLLOperation.reverseIterative();
+        unSCDLLOperation.insertAtEnd(8);
+        unSCDLLOperation.insertAtBeg(1);
+        unSCDLLOperation.printCDLL();
+    }
 }

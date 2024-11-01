@@ -219,4 +219,30 @@ public class UnSCSLLOperation {
         nextNode.next = tail;
         tail = nextNode;
     }
+
+    public static void main(String[] args) {
+
+        UnSCSLLOperation unSCSLLOperation = new UnSCSLLOperation();
+        unSCSLLOperation.insertAtBeg(5);
+        unSCSLLOperation.insertAtEnd(8);
+        unSCSLLOperation.insertAtBeg(4);
+        unSCSLLOperation.insertAtEnd(9);
+        unSCSLLOperation.printCSLL();
+        System.out.println("Size= " + unSCSLLOperation.getSize());
+        unSCSLLOperation.insertAtPos(10,4);
+        unSCSLLOperation.insertAtPos(2,1);
+        unSCSLLOperation.insertAtPos(3,2);
+        unSCSLLOperation.printCSLL();
+        unSCSLLOperation.insertAtBeg(5);
+        unSCSLLOperation.insertAtPos(4,1);
+        unSCSLLOperation.printCSLL();
+        unSCSLLOperation.deleteAtPos(1);
+        unSCSLLOperation.deleteAtPos(8);
+        unSCSLLOperation.deleteAtEnd();
+        unSCSLLOperation.printCSLL();
+        unSCSLLOperation.deleteAtBeg();
+        unSCSLLOperation.printCSLL();
+        unSCSLLOperation.reverseCSLLIterative();
+        unSCSLLOperation.printCSLL();
+    }
 }

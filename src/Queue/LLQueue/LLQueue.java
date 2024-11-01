@@ -70,4 +70,29 @@ public class LLQueue {
         }
         System.out.println();
     }
+
+    public static void main(String[] args) {
+
+        LLQueue llQueue = new LLQueue();
+        llQueue.enqueue(5);
+        llQueue.enqueue(4);
+        llQueue.enqueue(3);
+        llQueue.enqueue(2);
+        llQueue.enqueue(1);
+        llQueue.display();
+        System.out.println(llQueue.peek());
+        llQueue.dequeue();
+        System.out.println(llQueue.peek());
+        llQueue.dequeue();
+        System.out.println(llQueue.peek());
+        llQueue.dequeue();
+        System.out.println(llQueue.peek());
+        llQueue.dequeue();
+        System.out.println(llQueue.peek());
+        llQueue.dequeue();
+        System.out.println(llQueue.peek());
+        llQueue.display();
+        llQueue.dequeue();
+        System.out.println(llQueue.peek());
+    }
 }

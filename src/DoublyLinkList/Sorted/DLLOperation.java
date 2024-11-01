@@ -234,4 +234,76 @@ public class DLLOperation {
         }
     }
 
+    public static void main(String[] args) {
+
+        DLLOperation dllOperation = new DLLOperation();
+        dllOperation.addNode(5);
+        dllOperation.addNode(10);
+        dllOperation.addNode(4);
+        dllOperation.addNode(7);
+        dllOperation.addNode(3);
+        dllOperation.addNode(2);
+        dllOperation.addNode(15);
+        dllOperation.addNode(9);
+        dllOperation.addNode(8);
+        dllOperation.addNode(6);
+        System.out.println("Size = "+ dllOperation.getSize());
+        dllOperation.printDLL();
+        dllOperation.deleteNode(15);
+        dllOperation.deleteNode(2);
+        dllOperation.deleteNode(6);
+        dllOperation.deleteNode(8);
+        dllOperation.deleteNode(25);
+        dllOperation.deleteNode(1);
+        System.out.println("Size = "+ dllOperation.getSize());
+        dllOperation.printDLL();
+        dllOperation.printNode(3);
+        dllOperation.printNode(5);
+        dllOperation.printNode(9);
+        dllOperation.printNode(10);
+        dllOperation.printNode(25);
+        dllOperation.printNode(1);
+        dllOperation.deleteList();
+        System.out.println("Size = "+ dllOperation.getSize());
+        dllOperation.printDLL();
+
+        DLLOperation dllOperation1 = new DLLOperation();
+        dllOperation1.addNode(1);
+        dllOperation1.addNode(4);
+        dllOperation1.addNode(7);
+
+        DLLOperation dllOperation2 = new DLLOperation();
+        dllOperation2.addNode(2);
+        dllOperation2.addNode(5);
+        dllOperation2.addNode(8);
+        dllOperation1.setHead(dllOperation1.merge2SortedDLL(dllOperation1.getHead(),dllOperation2.getHead()));
+        dllOperation1.printDLL();
+        dllOperation1.addNode(0);
+        dllOperation1.addNode(10);
+        dllOperation1.addNode(9);
+        dllOperation1.addNode(6);
+        dllOperation1.printDLL();
+
+        DLLOperation dllOperation3 = new DLLOperation();
+        dllOperation3.addNode(1);
+        dllOperation3.addNode(4);
+        dllOperation3.addNode(7);
+
+        DLLOperation dllOperation4 = new DLLOperation();
+        dllOperation4.addNode(2);
+        dllOperation4.addNode(5);
+        dllOperation4.addNode(8);
+        dllOperation3.setHead(dllOperation3.merge2SortedDLLRec(dllOperation3.getHead(),dllOperation4.getHead()));
+        dllOperation3.printDLL();
+        dllOperation3.addNode(0);
+        dllOperation3.addNode(10);
+        dllOperation3.addNode(9);
+        dllOperation3.addNode(6);
+        dllOperation3.printDLL();
+
+        DLLOperation dllOperation5 = new DLLOperation();
+        dllOperation5.setHead(dllOperation5.merge2SortedDLLRec(dllOperation5.getHead(),dllOperation5.getHead()));
+        dllOperation5.printDLL();
+
+    }
 }

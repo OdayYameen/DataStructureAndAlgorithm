@@ -311,4 +311,47 @@ public class UnSSLLOperation {
         }
         slow.next = null;
     }
+
+    public static void main(String[] args) {
+
+        UnSSLLOperation unSSLLOperation = new UnSSLLOperation();
+        unSSLLOperation.insertAfterPos(1,0);
+        unSSLLOperation.insertAfterPos(2,1);
+        unSSLLOperation.insertAfterPos(3,1);
+        unSSLLOperation.insertAfterPos(4,1);
+        unSSLLOperation.insertAfterPos(5,1);
+        unSSLLOperation.insertAfterPos(6,3);
+        unSSLLOperation.insertAfterPos(7,3);
+        unSSLLOperation.insertAfterPos(8,2);
+        unSSLLOperation.insertAfterPos(9,1);
+        unSSLLOperation.insertAtBeg(8);
+        unSSLLOperation.insertAtPos(4,0);
+        unSSLLOperation.insertAtPos(4,1);
+        unSSLLOperation.insertAtPos(5,1);
+        unSSLLOperation.insertAtPos(7,1);
+        unSSLLOperation.insertAtPos(22,2);
+        unSSLLOperation.insertAtPos(1,12);
+        unSSLLOperation.insertAtEnd(10);
+        unSSLLOperation.insertAtBeg(11);
+        unSSLLOperation.insertAtEnd(12);
+        unSSLLOperation.insertAtBeg(15);
+        unSSLLOperation.insertAtEnd(17);
+        unSSLLOperation.printSLL();
+        unSSLLOperation.deleteAtPos(1);
+        unSSLLOperation.deleteAtEnd();
+        unSSLLOperation.deleteAtPos(20);
+        unSSLLOperation.deleteAtPos(5);
+        unSSLLOperation.printSLL();
+        unSSLLOperation.insertAtBeg(8);
+        unSSLLOperation.insertAtEnd(10);
+        unSSLLOperation.insertAtBeg(11);
+        unSSLLOperation.insertAtEnd(12);
+        unSSLLOperation.insertAtBeg(15);
+        unSSLLOperation.insertAtEnd(17);
+        unSSLLOperation.printSLL();
+        unSSLLOperation.reverseIterative();
+        unSSLLOperation.printSLL();
+        unSSLLOperation.setHead(unSSLLOperation.reverseRec(unSSLLOperation.getHead()));
+        unSSLLOperation.printSLL();
+    }
 }

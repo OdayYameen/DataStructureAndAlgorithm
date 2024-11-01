@@ -122,4 +122,49 @@ public class SCSLLOperation {
         System.out.print(p.data + "  <==Done");
         System.out.println();
     }
+
+    public static void main(String[] args) {
+
+        SCSLLOperation scsllOperation = new SCSLLOperation();
+        scsllOperation.insertNode(5);
+        scsllOperation.insertNode(4);
+        scsllOperation.insertNode(3);
+        scsllOperation.insertNode(8);
+        scsllOperation.insertNode(9);
+        scsllOperation.insertNode(10);
+        scsllOperation.printCSLL();
+        scsllOperation.insertNode(5);
+        scsllOperation.insertNode(4);
+        scsllOperation.insertNode(3);
+        scsllOperation.insertNode(8);
+        scsllOperation.insertNode(9);
+        scsllOperation.insertNode(10);
+        scsllOperation.printCSLL();
+        scsllOperation.insertNode(15);
+        scsllOperation.insertNode(14);
+        scsllOperation.printCSLL();
+        scsllOperation.deleteNode(15);
+        scsllOperation.deleteNode(14);
+        scsllOperation.printCSLL();
+        scsllOperation.deleteNode(5);
+        scsllOperation.deleteNode(8);
+        scsllOperation.deleteNode(9);
+        scsllOperation.deleteNode(10);
+        scsllOperation.deleteNode(3);
+        scsllOperation.deleteNode(4);
+        scsllOperation.printCSLL();
+        scsllOperation.deleteNode(5);
+        scsllOperation.deleteNode(8);
+        scsllOperation.deleteNode(9);
+        scsllOperation.deleteNode(10);
+        scsllOperation.deleteNode(3);
+        scsllOperation.deleteNode(55);
+        scsllOperation.printCSLL();
+        scsllOperation.deleteNode(4);
+        scsllOperation.printCSLL();
+        scsllOperation.deleteNode(55);
+        scsllOperation.insertNode(77);
+        scsllOperation.insertNode(88);
+        scsllOperation.printCSLL();
+    }
 }

@@ -70,4 +70,25 @@ public class ArrayQueue {
     {
         return count;
     }
+
+    public static void main(String[] args) {
+
+        ArrayQueue arrayQueue = new ArrayQueue();
+        arrayQueue.enqueue(5);
+        arrayQueue.enqueue(4);
+        arrayQueue.enqueue(3);
+        arrayQueue.enqueue(2);
+        arrayQueue.enqueue(1);
+        arrayQueue.enqueue(8);
+        System.out.println("Size = "+arrayQueue.getSize());
+        arrayQueue.displayQueue();
+        System.out.println(arrayQueue.dequeue());
+        System.out.println(arrayQueue.dequeue());
+        System.out.println(arrayQueue.dequeue());
+        System.out.println(arrayQueue.dequeue());
+        System.out.println(arrayQueue.dequeue());
+        arrayQueue.displayQueue();
+        System.out.println(arrayQueue.dequeue());
+        System.out.println("Size = "+arrayQueue.getSize());
+    }
 }

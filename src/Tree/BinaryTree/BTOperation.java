@@ -61,4 +61,20 @@ public class BTOperation {
         printInOrder(root.right);
         System.out.print(root.data + "  ,  ");
     }
+
+    public static void main(String[] args) {
+
+        BTOperation btOperation = new BTOperation();
+        btOperation.createBinaryTree();
+        System.out.println("Print inorder");
+        btOperation.printInOrder(btOperation.getRoot());
+        System.out.println();
+        System.out.println("Print preorder");
+        btOperation.printPreOrder(btOperation.getRoot());
+        System.out.println();
+        System.out.println("Print postorder");
+        btOperation.printPostOrder(btOperation.getRoot());
+        System.out.println("Print inorder");
+        btOperation.printInOrder(btOperation.getRoot());
+    }
 }

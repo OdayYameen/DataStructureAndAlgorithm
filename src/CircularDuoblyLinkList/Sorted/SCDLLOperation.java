@@ -137,4 +137,37 @@ public class SCDLLOperation {
         System.out.print(temp.data + "  <==Done");
         System.out.println();
     }
+
+    public static void main(String[] args) {
+        SCDLLOperation scdllOperation = new SCDLLOperation();
+        scdllOperation.insertNode(5);
+        scdllOperation.insertNode(4);
+        scdllOperation.insertNode(6);
+        scdllOperation.insertNode(3);
+        scdllOperation.insertNode(7);
+        scdllOperation.printCDLL();
+        scdllOperation.insertNode(5);
+        scdllOperation.insertNode(4);
+        scdllOperation.insertNode(6);
+        scdllOperation.insertNode(3);
+        scdllOperation.insertNode(7);
+        scdllOperation.printCDLL();
+        scdllOperation.insertNode(15);
+        scdllOperation.insertNode(10);
+        scdllOperation.printCDLL();
+        scdllOperation.deleteNode(3);
+        scdllOperation.deleteNode(15);
+        scdllOperation.deleteNode(10);
+        scdllOperation.deleteNode(5);
+        scdllOperation.deleteNode(4);
+        scdllOperation.deleteNode(6);
+        scdllOperation.deleteNode(7);
+        scdllOperation.deleteNode(6);
+        scdllOperation.deleteNode(5);
+        scdllOperation.deleteNode(3);
+        scdllOperation.deleteNode(4);
+        scdllOperation.deleteNode(7);
+        scdllOperation.deleteNode(78);
+        scdllOperation.printCDLL();
+    }
 }

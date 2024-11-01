@@ -227,4 +227,53 @@ public class SLLOperation {
             return b;
         }
     }
+
+    public static void main(String[] args) {
+
+        SLLOperation sllOperation = new SLLOperation();
+        sllOperation.addNode(4);
+        sllOperation.addNode(5);
+        sllOperation.addNode(3);
+        sllOperation.addNode(6);
+        sllOperation.addNode(7);
+        sllOperation.addNode(8);
+        sllOperation.addNode(9);
+        sllOperation.addNode(10);
+        sllOperation.addNode(11);
+        sllOperation.printSLL();
+        System.out.println("Size = "+ sllOperation.getSize());
+        sllOperation.deleteNode(10);
+        sllOperation.deleteNode(8);
+        sllOperation.deleteNode(3);
+        sllOperation.deleteNode(4);
+        sllOperation.printSLL();
+        sllOperation.printNode(11);
+        sllOperation.printNode(4);
+        sllOperation.printNode( 100);
+        System.out.println("Size = "+ sllOperation.getSize());
+
+        SLLOperation sllOperation1 = new SLLOperation();
+        sllOperation1.addNode(1);
+        sllOperation1.addNode(4);
+        sllOperation1.addNode(7);
+
+        SLLOperation sllOperation2 = new SLLOperation();
+        sllOperation2.addNode(2);
+        sllOperation2.addNode(5);
+        sllOperation2.addNode(8);
+        sllOperation1.setHead(sllOperation1.merge2Sorted(sllOperation1.getHead(),sllOperation2.getHead()));
+        sllOperation1.printSLL();
+
+        SLLOperation sllOperation3 = new SLLOperation();
+        sllOperation3.addNode(1);
+        sllOperation3.addNode(4);
+        sllOperation3.addNode(7);
+
+        SLLOperation sllOperation4 = new SLLOperation();
+        sllOperation4.addNode(2);
+        sllOperation4.addNode(5);
+        sllOperation4.addNode(8);
+        sllOperation3.setHead(sllOperation3.merge2SortedListRec(sllOperation3.getHead(),sllOperation4.getHead()));
+        sllOperation3.printSLL();
+    }
 }
