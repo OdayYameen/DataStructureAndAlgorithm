@@ -1,0 +1,28 @@
+Tree:
+
+1.  root: top node in the tree, don't have a parent
+2.  parent node : immediate(first) predecessor to that node
+3.  child node : immediate successor to that node
+4.  predecessor node: previous node to that node
+5.  successor : next node to that node
+6.  leaf node(External node): node don't have any child
+7.  non leaf node(Internal node) : node have at least one child (1 or more)
+8.  edge: link between 2 node
+9.  path: sequence of consecutive edges from source node to destination node
+10. ancestor of node : any predecessor node on the path from root to that node
+11. descendant of node : any successor node on the path(s) from that node to the leaf node
+12. common ancestor of 2 node: is the common ancestor for 1st and 2nd node
+13. common descendant of 2 node: is the common descendant for 1st and 2nd node
+14. sibling : children of same parent(Cousin)
+15. degree of node : number of immediate children of that node
+16. degree of tree: maximum degree among all node(max (degree of all node))
+17. degree of leaf node = zero
+
+18. depth of node : number of edges in the path from root to that node
+19. height of node : number of edges in the (Longest) path from that node to leaf node
+20. level of node : number of edges in the path from root to that node
+					a)	Note: level of node = depth of node
+					b)  Note: level of tree = height of tree
+					c)  Note: level of node != height of node
+					d)  Note: N node ==> N-1 edges
+					e)  Note: depth of root = zero

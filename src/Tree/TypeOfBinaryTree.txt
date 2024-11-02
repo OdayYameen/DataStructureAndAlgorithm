@@ -1,0 +1,28 @@
+BinaryTree:
+
+1.  Maximum node at level i = 2 ^i
+2.  each node have at most 2 children
+3.  max number of node at height h = (2^(h+1))-1
+4.  min number of node at height h = h+1
+5.  min height if max number of node given = ceil((log2(n+1)-1)
+6.  max height if min number of node given = n-1
+
+Type of BinaryTree:
+1.  Full/Proper/Strict	:
+			a)  each node have either 0 or 2 children but not 1
+			b)  no. of leaf node = (no. of internal node + 1)
+2.  Complete BinaryTree: 
+			a) all level are completely filled (Except possibly the last level)
+			b) and the last level has nodes as left as possible,
+			so if any child in last level not filled before right child then it is not completely BinaryTree
+			
+3.  Perfect BinaryTree:
+			a)  all internal nodes have 2 children
+			b)  all leaves are at same level
+			c)  Note: each PerfectBT is Complete & Full BT
+			    but not each Full or Complete is Perfect BT
+4.  Degenerated(pathological) BinaryTree:
+			a)  each internal node have only 1 child 
+			b)  Note: LeftSkewed BT only have left children
+			c)  Note: RightSkewed BT only have right children
+			d)  Note: MixedSkewed BT have one child either right or left
